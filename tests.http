@@ -1,0 +1,25 @@
+### Fetch hotels
+get http://localhost:3000
+
+### Add hotel
+post http://localhost:3000
+Content-Type: application/json
+
+{
+  "name": "Montage Kapalua Bay 2",
+  "address": "1 Bay Dr, Lahaina, HI 96761",
+  "stars": 4
+}
+
+### Update hotel
+put http://localhost:3000/5
+Content-Type: application/json
+
+{
+  "name": "Montage Kapalua Bay 2 (updated)",
+  "address": "1 Bay Dr, Lahaina, HI 96762",
+  "stars": 6
+}
+
+### Delete hotel
+delete http://localhost:3000/5
