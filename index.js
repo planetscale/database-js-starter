@@ -7,9 +7,9 @@ const app = express()
 app.use(express.json())
 
 const config = {
-  host: process.env.PS_HOST,
-  username: process.env.PS_USERNAME,
-  password: process.env.PS_PASSWORD,
+  host: process.env.DATABASE_HOST,
+  username: process.env.DATABASE_USERNAME,
+  password: process.env.DATABASE_PASSWORD,
 }
 const conn = await connect(config)
 
