@@ -1,6 +1,6 @@
 # database-js-starter
 
-A sample Node.js Express API that using the [PlanetScale serverless driver for JavaScript](https://planetscale.com/blog/introducing-the-planetscale-serverless-driver-for-javascript). It contains sample API endpoints that can be used to map to various operations on your PlanetScale database:
+A sample Node.js Express API built using the [PlanetScale serverless driver for JavaScript](https://planetscale.com/blog/introducing-the-planetscale-serverless-driver-for-javascript). It contains sample API endpoints that can be used to map to various operations on your PlanetScale database:
 
 | API Method | SQL Action |
 |---|---|
