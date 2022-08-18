@@ -9,13 +9,13 @@ A sample Node.js Express API built using the [PlanetScale serverless driver for 
 |`PUT`| `UPDATE`|
 |`DELETE`| `DELETE`|
 
-The main goal of this sample is to be used to gain an understainding of how to use the serverless driver in your own code.
+The main goal of this sample is to be used to gain an understanding of how to use the serverless driver in your own code.
 
-For an in-depth explaination on how to use this repo, check the [associated article](https://planetscale.com/docs/tutorials/planetscale-serverless-driver-node-example) on the PlanetScale docs site.
+For an in-depth explanation of how to use this repo, check the [associated article](https://planetscale.com/docs/tutorials/planetscale-serverless-driver-node-example) on the PlanetScale docs site.
 
 ## Set up the database
 
-Before you can start the project, you should setup a database that can be used with the project. Create a database on PlanetScale named `travel_db`. Once the database has initialized, run the following command to create the necessary structures for the database and insert the sample dataset:
+Before you can start the project, you should set up a database that can be used with the project. Create a database on PlanetScale named `travel_db`. Once the database has initialized, run the following command to create the necessary structures for the database and insert the sample dataset:
 
 ```bash
 cd scripts
@@ -35,9 +35,9 @@ You should receive a message stating that the API is running.
 
 ## Test the API
 
-The `tests.http` file can be used to test the various endpoints. It is designed to be used with the [VS Code Rest Client plugin](https://marketplace.visualstudio.com/items?itemName=humao.rest-client), although it can also be used as a reference in testing with altnerate tools.
+The `tests.http` file can be used to test the various endpoints. It is designed to be used with the [VS Code Rest Client plugin](https://marketplace.visualstudio.com/items?itemName=humao.rest-client), although it can also be used as a reference in testing with alternate tools.
 
-## Futher reading
+## Further reading
 
 To learn more about the PlanetScale serverless driver for JavaScript, review the following articles:
 
