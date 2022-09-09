@@ -19,6 +19,19 @@ app.get('/', async (req, res) => {
   res.json(results.rows)
 })
 
+// add endpoint to retrieve a single hotel
+app.get('/:id', async (req, res) => {
+  const results = await conn.execute("SELECT * FROM hotels WHERE id = ?", [req.params.id])
+  console.log(results)
+  // if no results, return 404
+  if (results.rows.length === 0) {
+    res.status(404).send()
+    return
+  }
+  // return the first row
+  res.json(results.rows[0])
+})
+
 app.post('/', async (req, res) => {
   const query = "INSERT INTO hotels (`name`, `address`, `stars`) VALUES (:name, :address, :stars)"
   const params = {
@@ -45,6 +58,11 @@ app.put('/:id', async (req, res) => {
     stars: req.body.stars
   }
   const results = await conn.execute(query, params)
+  // check if hotel exists
+  if (results.rowsAffected != 1) {
+    res.status(404).send()
+    return
+  }
   console.log(results)
   res.status(200).send()
 })
@@ -58,6 +76,12 @@ app.delete("/:id", async (req, res) => {
     stars: req.body.stars
   }
   const results = await conn.execute(query, params)
+  // check if a row was deleted
+  if (results.rowsAffected != 1) {
+    res.status(404).send()
+    return
+  }
+
   console.log(results)
   res.status(200).send()
 })
