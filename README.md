@@ -1,5 +1,7 @@
 # database-js-starter
 
+> **Note:** This sample uses the [PlanetScale serverless driver for JavaScript](https://planetscale.com/blog/introducing-the-planetscale-serverless-driver-for-javascript), which targets PlanetScale Vitess/MySQL. For PlanetScale Postgres, use a supported PostgreSQL driver and the Postgres connection flow described in the [PlanetScale Postgres documentation](https://planetscale.com/docs/postgres).
+
 A sample Node.js Express API built using the [PlanetScale serverless driver for JavaScript](https://planetscale.com/blog/introducing-the-planetscale-serverless-driver-for-javascript). It contains sample API endpoints that can be used to map to various operations on your PlanetScale database:
 
 | API Method | SQL Action |
