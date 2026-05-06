@@ -1,6 +1,6 @@
 # database-js-starter
 
-> **Note:** This sample targets PlanetScale Vitess/MySQL. PlanetScale also offers managed PostgreSQL. For more information, see the [PlanetScale Postgres documentation](https://planetscale.com/docs/postgres).
+> **Note:** This sample targets PlanetScale Vitess/MySQL. PlanetScale also offers managed Postgres. For more information, see the [PlanetScale Postgres documentation](https://planetscale.com/docs/postgres).
 
 A sample Node.js Express API built using the [PlanetScale serverless driver for JavaScript](https://planetscale.com/blog/introducing-the-planetscale-serverless-driver-for-javascript). It contains sample API endpoints that can be used to map to various operations on your PlanetScale database:
 
